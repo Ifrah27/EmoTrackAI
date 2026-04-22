@@ -5,5 +5,8 @@ tensorflow-cpu
 tf-keras
 numpy
 av
-statistics
+scipy
+pandas
 h5py
+statistics
+pillow
