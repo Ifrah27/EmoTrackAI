@@ -69,4 +69,3 @@ EmoTrack AI utilizes a **Multi-Model Inference Pipeline**:
 
 ---
 
-*Property of EmoTrack AI Development Team | Professional Analytics Interface*
