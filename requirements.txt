@@ -3,10 +3,12 @@ streamlit-webrtc
 opencv-python-headless
 tensorflow-cpu
 tf-keras
+keras
 numpy
 av
 scipy
 pandas
 h5py
+matplotlib
 statistics
 pillow
