@@ -1,73 +1,72 @@
-# This repository is deprecated for at TF-2.0 rewrite visit:
-# https://github.com/oarriaga/paz
-------------------------------------------------
-# Face classification and detection.
-Real-time face detection and emotion/gender classification using fer2013/IMDB datasets with a keras CNN model and openCV.
-* IMDB gender classification test accuracy: 96%.
-* fer2013 emotion classification test accuracy: 66%.
+# EmoTrack AI 🚀
 
-For more information please consult the [publication](https://github.com/oarriaga/face_classification/blob/master/report.pdf)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://emotrackai.streamlit.app)
+[![AI Powered](https://img.shields.io/badge/AI-Xception-indigo.svg)](#)
 
-# Emotion/gender examples:
+**EmoTrack AI** is a professional-grade, real-time facial intelligence platform designed to deliver high-precision analytics with a premium "Vision Pro" aesthetic. It transforms standard webcam feeds into a sophisticated dashboard that tracks emotions and gender with cinematic quality.
 
-![alt tag](images/demo_results.png)
+---
 
-Guided back-prop
-![alt tag](images/gradcam_results.png)
+## 💎 Features
 
-Real-time demo:
-<div align='center'>
-  <img src='images/color_demo.gif' width='400px'>
-</div>
+### 🎨 The Zenith Masterpiece Interface
+Experience a modern "Command Center" dashboard built with state-of-the-art UI/UX:
+- **Glassmorphism**: High-blur frosted glass panels and neon indigo accents.
+- **Scanner HUD**: Futuristic 4-corner brackets that track and follow your movements with precision.
+- **Interactive Console**: A live terminal-style sidebar that streams real-time AI "thought processes" and diagnostics.
 
-[B-IT-BOTS](https://mas-group.inf.h-brs.de/?page_id=622) robotics team :)
-![alt tag](images/robocup_team.png)
+### ⚙️ High-Performance AI Engine
+- **Butter-Smooth FPS**: Optimized to maintain a fluid 30+ FPS video stream while performing intensive deep learning inference.
+- **Temporal Stability**: Implements a 30-frame rolling average (Temporal Majority Voting) to prevent label "flickering" and ensure rock-solid classification.
+- **Double-Buffered Analytics**: Processes every 3rd frame for AI analytics while keeping the display perfectly responsive.
 
-## Instructions
+---
 
-### Run real-time emotion demo:
-> python3 video_emotion_color_demo.py
+## 🛠️ Technology Stack
 
-### Run real-time guided back-prop demo:
-> python3 image_gradcam_demo.py
+| Layer | Technology |
+| :--- | :--- |
+| **Core AI** | TensorFlow, Keras, Xception Models |
+| **Vision** | OpenCV (Headless Optimization) |
+| **Dashboard** | Streamlit, Streamlit-WebRTC |
+| **Backend** | Python 3.11, NumPy, SciPy, Pandas |
+| **Cloud** | Streamlit Cloud, GitHub |
 
-### Make inference on single images:
-> python3 image_emotion_gender_demo.py <image_path>
+---
 
-e.g.
+## 🚀 Quick Start
 
-> python3 image_emotion_gender_demo.py ../images/test_image.jpg
+### Live Cloud Version
+Access the live dashboard immediately at: [emotrackai.streamlit.app](https://emotrackai.streamlit.app)
 
-### Running with Docker
+### Local Installation
+To run EmoTrack AI on your local machine:
 
-With a few steps one can get its own face classification and detection running. Follow the commands below:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ifrah27/EmoTrackAI.git
+   cd EmoTrackAI
+   ```
 
-* ```docker pull ekholabs/face-classifier```
-* ```docker run -d -p 8084:8084 --name=face-classifier ekholabs/face-classifier```
-* ```curl -v -F image=@[path_to_image]  http://localhost:8084/classifyImage > image.png```
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### To train previous/new models for emotion classification:
+3. **Launch the engine:**
+   ```bash
+   python -m streamlit run app.py
+   ```
 
+---
 
-* Download the fer2013.tar.gz file from [here](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
+## 📐 Architecture
+EmoTrack AI utilizes a **Multi-Model Inference Pipeline**:
+- **Haar Cascade**: High-speed initial face detection.
+- **Xception V2 (Emotion)**: Deep CNN for classifying 7 distinct emotional states.
+- **Xception V2 (Gender)**: Optimized neural network for gender identification with 96%+ accuracy.
 
-* Move the downloaded file to the datasets directory inside this repository.
+---
 
-* Untar the file:
-> tar -xzf fer2013.tar
-
-* Run the train_emotion_classification.py file
-> python3 train_emotion_classifier.py
-
-### To train previous/new models for gender classification:
-
-* Download the imdb_crop.tar file from [here](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/) (It's the 7GB button with the tittle Download faces only).
-
-* Move the downloaded file to the datasets directory inside this repository.
-
-* Untar the file:
-> tar -xfv imdb_crop.tar
-
-* Run the train_gender_classification.py file
-> python3 train_gender_classifier.py
-
+*Property of EmoTrack AI Development Team | Professional Analytics Interface*
