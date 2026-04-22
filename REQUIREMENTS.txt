@@ -1,9 +1,0 @@
-streamlit
-streamlit-webrtc
-opencv-python-headless
-tensorflow-cpu
-tf-keras
-numpy
-av
-statistics
-h5py
